@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3FD0F59-ED16-48D1-8956-EB376C96FEBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMSA</RootNamespace>
+    <AssemblyName>TMSA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Cyril\Desktop\TMSA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MinimumRequiredVersion>1.0.0.12</MinimumRequiredVersion>
+    <ApplicationRevision>22</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>146978492D4299EA7D496990958CD762178E2203</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TMSA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CellDirtyTrackerCollection.cs" />
+    <Compile Include="ControlDirtyTracker.cs" />
+    <Compile Include="ControlDirtyTrackerCollection.cs" />
+    <Compile Include="frmApplicationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApplicationSettings.designer.cs">
+      <DependentUpon>frmApplicationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssignmentReportSkeleton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssignmentReportSkeleton.designer.cs">
+      <DependentUpon>frmAssignmentReportSkeleton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackupAndRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackupAndRestore.designer.cs">
+      <DependentUpon>frmBackupAndRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseAssistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseAssistant.Designer.cs">
+      <DependentUpon>frmChooseAssistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseCounselPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseCounselPoint.Designer.cs">
+      <DependentUpon>frmChooseCounselPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChoosePublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChoosePublisher.Designer.cs">
+      <DependentUpon>frmChoosePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCounselPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCounselPoint.Designer.cs">
+      <DependentUpon>frmCounselPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssignment.Designer.cs">
+      <DependentUpon>frmAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublishers.Designer.cs">
+      <DependentUpon>frmPublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="frmMessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBoxForm.designer.cs">
+      <DependentUpon>frmMessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmTabularAssignmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabularAssignmentReport.designer.cs">
+      <DependentUpon>frmTabularAssignmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleDirtyTracker.cs" />
+    <Compile Include="SlightlyMoreSophisticatedDirtyTracker.cs" />
+    <Compile Include="TMSADataSet.cs">
+      <DependentUpon>TMSADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssignmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssignmentReport.designer.cs">
+      <DependentUpon>frmAssignmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TMSADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TMSADataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssignmentReportSkeleton.rdlc" />
+    <EmbeddedResource Include="frmApplicationSettings.resx">
+      <DependentUpon>frmApplicationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssignmentReportSkeleton.resx">
+      <DependentUpon>frmAssignmentReportSkeleton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackupAndRestore.resx">
+      <DependentUpon>frmBackupAndRestore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseAssistant.resx">
+      <DependentUpon>frmChooseAssistant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseCounselPoint.resx">
+      <DependentUpon>frmChooseCounselPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChoosePublisher.resx">
+      <DependentUpon>frmChoosePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCounselPoint.resx">
+      <DependentUpon>frmCounselPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssignment.resx">
+      <DependentUpon>frmAssignment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublishers.resx">
+      <DependentUpon>frmPublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageBoxForm.resx">
+      <DependentUpon>frmMessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAssignmentReport.resx">
+      <DependentUpon>frmAssignmentReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignmentReport.rdlc" />
+    <EmbeddedResource Include="TabularAssignmentReport.rdlc" />
+    <EmbeddedResource Include="frmTabularAssignmentReport.resx">
+      <DependentUpon>frmTabularAssignmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TMSADataSet.xsc">
+      <DependentUpon>TMSADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TMSADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>TMSADataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TMSADataSet.xss">
+      <DependentUpon>TMSADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TMSA_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
